@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para centrar la tarjeta en la pantalla */
+.centered-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para la tarjeta de reserva */
+.card {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    background: #07182E;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Elementos en diseño de columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    width: 600px;
+    height: 400px;
+}
+
+/* Estilos para el botón de reserva */
+.boton-reserva {
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px; /* Espacio entre el último elemento y el botón */
+}
+
+.boton-reserva:hover {
+    background-color: #51ff00;
+}
+
+/* Estilos para el botón de regreso */
+.boton-regresar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #07182E;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.boton-regresar:hover {
+    color: #00b7ff;
+}
