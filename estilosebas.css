@@ -1,0 +1,265 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("imagenes/tori-1976609_1920.jpg"); /*tomada de pixabay autor: https://pixabay.com/es/users/jordymeow-943760/*/
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+     background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+  }
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+
+/* Estilos de la foto de perfil */
+.fotosebas {
+    width: 300px; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 50%; 
+    object-fit: cover;
+    flex: 0 0 auto;
+  }
+
+
+ 
+/*---------------------------------------------------------------------------------*/
+
+
+
+
+  /* Datos personales*/
+  .datospersonales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.50);
+    color: black;
+    margin-bottom: 10px;
+
+        background: inherit;
+
+  }
+  .datospersonales h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .datospersonales h3 {
+    margin: 0;
+  font-size: 16px;
+  }
+  
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+  
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+  /* DESCRIPCION */
+
+  .descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+    
+
+    margin-bottom: 10px;
+
+
+    background: inherit;
+    padding: 50px;
+    color:black;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+
+    
+  }
+
+
+  .desc{
+  margin: 0;
+  font-size: 20px;
+
+  
+  }
+
+
+  
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+  /*LISTA DE LOS TRABAJOS, DISEÑOS, CONSULTAS, TALLERES, RETOS*/
+
+  .secciones-de-trabajos{
+    display: flex;
+    gap: 150px; /* Espacio entre los artículos */
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /*el elemento se expandirá para adaptarse al contenido adicional*/
+    background: inherit;
+    padding: 50px;
+    color: black;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+
+
+    
+  }
+
+  @keyframes borderAnimation {
+    0%, 100% {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    25% {
+      border-top-color: rgb(255, 0, 0); /* Rojo */
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    50% {
+      border-top-color: transparent;
+      border-right-color: rgb(255, 0, 0); /* Verde */
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    75% {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: rgb(0, 0, 255); /* Azul */
+      border-left-color: transparent;
+    }
+
+    100% {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: rgb(30, 0, 255); /* Amarillo */
+    }
+  }
+  
+
+  .secciones-de-trabajos div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 20px;
+    border: 1px solid black;
+
+    border: 1px solid transparent; /* Borde inicial transparente */
+  padding: 10px;
+  transition: border-color 0.3s ease; /* Transición de 0.3 segundos para el cambio de color */
+
+  animation: borderAnimation 6S infinite linear; /* Aplica la animación */
+  border: 1px solid transparent; /* Borde inicial transparente */
+  padding: 10px;
+  
+  }
+
+  .article {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid black;
+    align-items: center;
+
+    
+
+  }
+
+  .diseño {
+
+
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
+  }
+
+  .retos{
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
+
+  }
+
+  .talleres{
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
+
+  }
+
+  .consulta{
+     color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
+
+
+  }
+
+
+
+
+
+
+
+  /*---------------------------------------------------------------------------------*/
+
+
+
+
+
+
+  /*PROGRAMCION WEB Y IUE*/
+
+.piu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    background: inherit;
+    padding: 50px;
+    color: black;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+
+
+}
+
+.pi{
+    display: flex;
+    gap: 400px; /* Espacio entre los elementos */
+    padding: 50px;
+    border: 1px solid  black;
+
+    font-size: 18px;
+    line-height: 1.5;
+    animation: borderAnimation 6S infinite linear; /* Aplica la animación */
+    border: 1px solid transparent; /* Borde inicial transparente */
+    padding: 10px;
+}
+
