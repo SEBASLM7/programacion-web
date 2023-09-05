@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+.foto{
+    width: 300px; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 50%; 
+    object-fit: cover;
+    flex: 0 0 auto;
+    background-position: center center; /* Alinea la imagen de fondo al centro vertical y horizontal */
+
+    
+}
+
+.foto-div{
+    background-color: aqua; /* Color de fondo deseado */
+    display: inline-block; /* Hace que el div se comporte como una caja en línea */
+    float: left; /* Hace que el div se alinee a la izquierda */
+    padding: top; /* Espacio alrededor del contenido, ajusta según sea necesario */
+    margin-top: top; /* Agrega espacio superior */
+    width: 400px; 
+    height: 1000px;
+    
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.todo{
+    background-color: #e2e2e2;
+    text-align: center;
+    width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Cambiar a diseño de columna */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    justify-content: center; /* Centrar verticalmente los elementos */
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+}
