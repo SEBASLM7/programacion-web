@@ -1,0 +1,17 @@
+.bingo{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+    width: 700px;
+    height: 700px;
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.color-letra-bingo{
+    color:#ff2f4b;
+}
