@@ -1,17 +1,22 @@
 /* Estilos generales */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("imagenes/tori-1976609_1920.jpg"); /*tomada de pixabay autor: https://pixabay.com/es/users/jordymeow-943760/*/
-    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
-     background-repeat: no-repeat; /* Evita la repetición de la imagen */
-  background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("imagenes/tori-1976609_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-.contenedor{
-    display: flex;
-    align-items: center;
-    padding: 20px;
+
+  
+}
+.encabezado {
+  padding: 20px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -21,14 +26,13 @@ body {
 
 /* Estilos de la foto de perfil */
 .fotosebas {
-    width: 300px; 
-    height: 300px;
-    margin-right: 20px;
-    border-radius: 50%; 
-    object-fit: cover;
-    flex: 0 0 auto;
-  }
-
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
 
  
 /*---------------------------------------------------------------------------------*/
@@ -37,28 +41,53 @@ body {
 
 
   /* Datos personales*/
-  .datospersonales{
+  .datospersonales {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-    background: rgba(217, 217, 217, 0.50);
     color: black;
     margin-bottom: 10px;
+}
 
-        background: inherit;
 
-  }
-  .datospersonales h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .datospersonales h3 {
-    margin: 0;
+.datospersonales h3 {
+  margin: 0;
   font-size: 16px;
+}
+
+  .body-slm{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Agregar margen en la parte inferior */
+    padding: 0;
+
+    font-size: 4rem;
+    position: absolute;
+
+    color: black;
+
+    text-shadow: -1px -1px 0 red, 1px -1px 0 red, 1px 1px 0 red, -1px 1px 0 red;
+
   }
-  
+
+  .sebaslm-ag{
+    color: red;
+    animation: sebaslm-ag 3s ease-in-out infinite;
+  }
+
+  @keyframes sebaslm-ag{
+    0%, 100% {
+      clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100% );
+    }
+
+    50%{
+      clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 65%, 100% 46%, 100% 100%, 0% 100% ) ;
+    } 
+  }
 
 
 
@@ -72,33 +101,21 @@ body {
 
   /* DESCRIPCION */
 
-  .descripcion{
+  .descripcion {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px;
-    
-
+    padding: 20px;
     margin-bottom: 10px;
+    color: black;
 
+    gap: 20px;
+}
 
-    background: inherit;
-    padding: 50px;
-    color:black;
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
-
-    
-  }
-
-
-  .desc{
+.desc {
   margin: 0;
   font-size: 20px;
-
-  
-  }
-
+}
 
   
 
@@ -107,123 +124,47 @@ body {
 
 
   /*LISTA DE LOS TRABAJOS, DISEÑOS, CONSULTAS, TALLERES, RETOS*/
-
-  .secciones-de-trabajos{
+  
+  .secciones-de-trabajos {
     display: flex;
-    gap: 150px; /* Espacio entre los artículos */
+    justify-content: flex-start;
+    gap: 20px; /* Espacio entre los elementos */
     background-color: black;
-    justify-content: center;
     align-items: center;
-    min-height: 60px; /*el elemento se expandirá para adaptarse al contenido adicional*/
+    min-height: 60px; /* El elemento se expandirá para adaptarse al contenido adicional */
     background: inherit;
-    padding: 100px;
-    color: black;
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
-
+    padding: 20px;
+    color: white;
     text-align: center;
 
-    
-  }
+    border-radius: 30px ;
+}
 
-  @keyframes borderAnimation {
-    0%, 100% {
-      border-top-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-    }
-    25% {
-      border-top-color: rgb(255, 0, 0); /* Rojo */
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-    }
-    50% {
-      border-top-color: transparent;
-      border-right-color: rgb(255, 0, 0); /* Verde */
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-    }
-    75% {
-      border-top-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: rgb(0, 0, 255); /* Azul */
-      border-left-color: transparent;
-    }
+.todo {
+    flex-grow: 1; /* Hace que todos los div tengan el mismo tamaño */
+    border: 2px solid black; /* Agrega un borde negro a los elementos div */
+    padding: 10px; /* Espacio interno para los elementos div */
 
-    100% {
-      border-top-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: rgb(30, 0, 255); /* Amarillo */
-    }
-  }
-  
+    border-radius: 30px ;
 
-  .secciones-de-trabajos div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espacio entre los cuadros */
-    padding: 20px;
-    border: 1px solid black;
+}
 
-    border: 1px solid transparent; /* Borde inicial transparente */
-  padding: 10px;
-  transition: border-color 0.3s ease; /* Transición de 0.3 segundos para el cambio de color */
+.todo h2 {
+    color: black;
+    font-size: 18px;
+}
 
-  animation: borderAnimation 6S infinite linear; /* Aplica la animación */
-  border: 1px solid transparent; /* Borde inicial transparente */
-  padding: 10px;
-  
-  }
+.todo ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
 
-  .article {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid black;
-    align-items: center;
-
-    
-
-  }
-
-  .diseño {
-
-
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno para separar el contenido del borde */
-    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
-  }
-
-  .retos{
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno para separar el contenido del borde */
-    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
-
-  }
-
-  .talleres{
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno para separar el contenido del borde */
-    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
-
-  }
-
-  .consulta{
-     color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno para separar el contenido del borde */
-    background: radial-gradient(92.60% 45.05% at 93.52% 88.34%, rgba(0, 255, 224, 0.20) 0%, rgba(26, 251, 224, 0.10) 100%), radial-gradient(93.49% 44.29% at 5.71% 100.00%, rgba(255, 0, 0, 0.50) 0%, #F00 0%, rgba(249, 22, 22, 0.05) 100%), #424242;
-
-
-  }
-
-
-
-
-
-
-
+.todo a {
+    color: blue;
+    text-decoration: none;
+}
   /*---------------------------------------------------------------------------------*/
 
 
