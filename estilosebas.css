@@ -1,207 +1,140 @@
-/* Estilos generales */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url("imagenes/tori-1976609_1920.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Permanent+Marker&display=swap');
 
+body{
+    font-family: 'M PLUS Rounded 1c';
+    margin: 0;
+    padding: 0;
 
-  
-}
-.encabezado {
-  padding: 20px;
-}
-
-.contenedor {
-  display: flex;
-  align-items: center;
-}
-
-
-/*---------------------------------------------------------------------------------*/
-
-
-
-/* Estilos de la foto de perfil */
-.fotosebas {
-  width: 300px;
-  height: 300px;
-  margin-right: 20px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex: 0 0 auto;
-}
 
  
-/*---------------------------------------------------------------------------------*/
-
-
-
-
-  /* Datos personales*/
-  .datospersonales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: black;
-    margin-bottom: 10px;
 }
 
 
-.datospersonales h3 {
-  margin: 0;
-  font-size: 16px;
+.fondo{
+    background-image: url("imagenes/tori-1976609_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
-  .body-slm{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+/* Estilos para el contenedor del encabezado como la foto y pequeñas descripciones */
+.foto-sebas {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px; /* Agregar margen en la parte inferior */
-    padding: 0;
-
-    font-size: 4rem;
-    position: absolute;
-
-    color: black;
-
-    text-shadow: -1px -1px 0 red, 1px -1px 0 red, 1px 1px 0 red, -1px 1px 0 red;
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
 
   }
-
-  .sebaslm-ag{
-    color: red;
-    animation: sebaslm-ag 3s ease-in-out infinite;
-  }
-
-  @keyframes sebaslm-ag{
-    0%, 100% {
-      clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100% );
-    }
-
-    50%{
-      clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 65%, 100% 46%, 100% 100%, 0% 100% ) ;
-    } 
-  }
-
-
-
-/*-------------------------------------------------------------------------------*/
-
   
+  /* Estilos para la foto */
+  .foto-sebas img {
+    max-width: 28%; /* Ancho de la foto */
+    border-radius: 50%;
 
-
-/*---------------------------------------------------------------------------------*/
-
-
-  /* DESCRIPCION */
-
+  }
+  
   .descripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: auto; 
     padding: 20px;
-    margin-bottom: 10px;
-    color: black;
-
-    gap: 20px;
-}
-
-.desc {
-  margin: 0;
-  font-size: 20px;
-}
-
-  
-
-
-/*---------------------------------------------------------------------------------*/
-
-
-  /*LISTA DE LOS TRABAJOS, DISEÑOS, CONSULTAS, TALLERES, RETOS*/
-  
-  .secciones-de-trabajos {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px; /* Espacio entre los elementos */
-    background-color: black;
-    align-items: center;
-    min-height: 60px; /* El elemento se expandirá para adaptarse al contenido adicional */
-    background: inherit;
-    padding: 20px;
-    color: white;
     text-align: center;
 
-    border-radius: 30px ;
-}
+  }
+  
+  /* Estilos para el párrafo (p) */
 
-.todo {
-    flex-grow: 1; /* Hace que todos los div tengan el mismo tamaño */
-    border: 2px solid black; /* Agrega un borde negro a los elementos div */
-    padding: 10px; /* Espacio interno para los elementos div */
+  .foto-sebas h2{
+    text-align: center;
+  }
+  
 
-    border-radius: 30px ;
 
-}
 
-.todo h2 {
-    color: black;
-    font-size: 18px;
-}
 
-.todo ol {
+
+
+
+  /* tablas de contenido diseño, talleres, consultas, */
+
+
+  .tablas{
+
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    position: relative; /* Establece posición relativa en la sección */
+  padding-bottom: 50px; /* Añade espacio en la parte inferior para el footer */
+  }
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente las columnas */
+    gap: 400px;
+  }
+
+ 
+  
+  .card {
+    flex: 2; /* Cambia este valor para ajustar el ancho de las tarjetas */
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+
+    color: #1407cc;
+  }
+  
+  ol {
     list-style: none;
-    padding: 0;
     margin: 0;
-    color: black;
-}
-
-.todo a {
-    color: blue;
+    padding: 0;
+  }
+  
+  ol a {
     text-decoration: none;
-}
-  /*---------------------------------------------------------------------------------*/
+    color: #333;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  ol a:hover {
+    background-color: white;
+  }
+  
 
 
 
 
+  /* gif de la pagina al final*/
+
+/* Estilo para el contenedor del GIF */
+footer {
+    text-align: center; /* Centra el contenido horizontalmente si lo deseas */
+    padding: 0; /* Añade espacio alrededor del contenido del footer */
+    position: relative; /* Establece posición relativa para el footer */
+    height: 500px; /* Ajusta la altura del footer según tus necesidades */
+  }
+  
+  .gif-container {
+    position: absolute; /* Establece posición absoluta para el contenedor */
+    left: 0; /* Lo coloca en la parte izquierda */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% del footer */
+    height: calc(100% - 40px); /* Ajusta la altura del contenedor menos el espacio superior e inferior */
+  }
+  
+  .gif-container img {
+    width: 100%; /* Establece el ancho del GIF al 100% del contenedor */
+    height: 100%; /* Ajusta la altura del GIF al 100% del contenedor */
+    object-fit: cover; /* Ajusta el contenido del GIF para cubrir todo el contenedor */
+  }
+  
+  
 
 
-  /*PROGRAMCION WEB Y IUE*/
-
-.piu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: black;
-    flex-direction: column;
-    margin-bottom: 10px;
-
-    background: inherit;
-    padding: 50px;
-    color: black;
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
-
-
-}
-
-.pi{
-    display: flex;
-    gap: 400px; /* Espacio entre los elementos */
-    padding: 50px;
-    border: 1px solid  black;
-
-    font-size: 18px;
-    line-height: 1.5;
-    animation: borderAnimation 6S infinite linear; /* Aplica la animación */
-    border: 1px solid transparent; /* Borde inicial transparente */
-    padding: 10px;
-}
 
