@@ -1,77 +1,101 @@
+
 /* Estilo para todo el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Fuente de la letra de la pagina*/
-    background-color: #f0f0f0; /* Color de fondo */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url("lake-1802337_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
-/*------------------------------------------------------------------------------------------------------------*/
-
-
+.aw{
+    text-align: center;
+}
 /* Estilo para el encabezado de la página */
 header {
-    background-color: #71b44d; /* Color de fondo */
-    color: #fff; /* Color de texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación de texto al centro */
+    background-color: rgba(113, 180, 77, 0.8); /* Cambiamos el color de fondo y hacemos que sea un poco transparente */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
     border-radius: 15px;
 }
 
-
-
-
-/*------------------------------------------------------------------------------------------------------------*/
-
-
-/* Estilo para el título principal */
-h1 {
-    margin: 0; /* Elimina los márgenes superiores e inferiores del título */
+/* Estilo para los paquetes de alojamiento, tienda de campaña y deportes */
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Hacemos que el fondo sea un poco transparente */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    border-radius: 20px;
 }
 
-.hotel{
-    color: #260016;
-    
+/* Estilo para las imágenes en las secciones */
+.imagenes {
+    width: 300px;
+    height: 200px;
+    display: block; /* Cambiamos a "block" para centrar verticalmente */
+    margin: 0 auto; /* Centramos horizontalmente */
+    text-align: center;
 }
-.bi{
-    color: #260016;
+
+/* Estilo para los párrafos de texto en las secciones */
+.texto {
+    text-align: center;
+    color: #333; /* Cambiamos el color del texto para mayor legibilidad */
+}
+
+/* Estilo para los botones */
+.reser {
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.reser:hover {
+    background-color: #51ff00;
+    text-decoration: none;
 }
 
 
-
+/* Estilo para la sección de reserva */
 .container {
-
-
     width: 800px;
     background: #07182E;
     position: relative;
     display: flex;
-    flex-direction: column; /* Cambiar a diseño de columna */
-    align-items: center; /* Centrar horizontalmente los elementos */
-    justify-content: center; /* Centrar verticalmente los elementos */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border-radius: 20px;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
-   
 }
+
+/* Estilo para el título y texto de reserva */
 .container h2,
 .container p,
 .container button {
     color: white;
     font-size: 2em;
-    margin-bottom: 20px; /* Espacio entre elementos */
-
+    margin-bottom: 20px;
     z-index: 1;
-    color: white;
-    font-size: 2em;
 }
 
-  
-
+/* Estilo para el efecto de fondo animado */
 .container::before {
     content: '';
     position: absolute;
@@ -80,9 +104,10 @@ h1 {
     height: 130%;
     animation: rotBGimg 3s linear infinite;
     transition: all 0.2s linear;
-  }
+}
 
-  .container::before {
+/* Estilo para el efecto de sombra alrededor del contenedor */
+.container::before {
     content: '';
     position: absolute;
     width: 500px;
@@ -114,91 +139,31 @@ h1 {
     background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
     animation: rotBGimg 3.5s linear infinite;
   } 
+
+
+  /* Reglas de medios para dispositivos más pequeños */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de la fuente y el espacio en elementos según sea necesario */
+    body {
+        font-size: 16px;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
   
 
-/*------------------------------------------------------------------------------------------------------------*/
-
-
-/* Estilo para los paquetes de alojamiento, tienda de campaña y desportes*/
-.package {
-    margin: 20px 0; /* Espaciado entre paquetes */
-}
-
-.aloja{
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Margen externo y centrado horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff; /* Color de fondo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-.card{
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Margen externo y centrado horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    background-color: #cacaca; /* Color de fondo */
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; /*sombra*/
-    border-radius: 20px /* borde de la tarjeta*/;
-}
-
-.deporte {
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Margen externo y centrado horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff; /* Color de fondo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-.tiendacampaña{
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Margen externo y centrado horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff; /* Color de fondo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-
-
-    
-}
-
-
-
-.imagenes{
-    width: 300px; /* Establece el ancho en 300 píxeles */
-    height: 200px; /* Establece el alto en 200 píxeles */
-
-    display: inline-block; /* Hace que la imagen sea un elemento en línea */
-}
-
-.texto{
-    text-align: center;
-}
-
-
-/*------------------------------------------------------------------------------------------------------------*/
-
-
-/* Estilo para los botones */
-
-.reser {
-    background-color: #00b7ff;
-    color: white;
-    border: none;
+.boton-regresar {
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px; /* Espacio entre el último elemento y el botón */
-    text-decoration: none;
-
+    transition: background-color 0.3s;
 }
 
-.reser:hover {
-    background-color: #51ff00;
-    text-decoration: none;
-
+.boton-regresar:hover {
+    background-color: #0056b3;
 }
-
-
-
-/*------------------------------------------------------------------------------------------------------------*/
-
