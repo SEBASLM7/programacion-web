@@ -138,3 +138,45 @@ footer {
 
 
 
+/* Media query para dispositivos pequeños, como smartphones */
+@media (max-width: 768px) {
+  .foto-sebas {
+      flex-direction: column; /* Cambia a una disposición de columna para dispositivos pequeños */
+      text-align: center;
+      gap: 20px;
+  }
+
+  .foto-sebas img {
+      max-width: 80%; /* Cambia el ancho de la foto para dispositivos pequeños */
+  }
+
+  .tablas {
+      flex-direction: column; /* Cambia a una disposición de columna para dispositivos pequeños */
+      align-items: center; /* Centra los elementos en dispositivos pequeños */
+  }
+
+  .col {
+      flex-direction: column; /* Cambia a una disposición de columna para dispositivos pequeños */
+      gap: 20px;
+  }
+  
+  .card {
+      flex: 1; /* Cambia el ancho de las tarjetas para dispositivos pequeños */
+  }
+
+  footer {
+      height: auto; /* Ajusta la altura del footer automáticamente en dispositivos pequeños */
+  }
+}
+
+/* Media query para dispositivos medianos, como tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Aplica estilos específicos para pantallas medianas aquí */
+  /* Puedes agregar estilos adicionales para dispositivos medianos si es necesario */
+}
+
+/* Media query para dispositivos grandes, como computadoras de escritorio */
+@media (min-width: 1025px) {
+  /* Aplica estilos específicos para pantallas grandes aquí */
+  /* Puedes agregar estilos adicionales para dispositivos grandes si es necesario */
+}
