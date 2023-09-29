@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.word-search {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Tamaño de la cuadrícula */
+    gap: 5px; /* Espacio entre letras */
+    font-size: 24px;
+    text-align: center;
+}
+
+.word {
+    background-color: #fff; /* Color de fondo por defecto */
+    padding: 10px;
+    transition: background-color 0.3s; /* Efecto de transición de color */
+    cursor: pointer;
+}
+
+.word:hover {
+    background-color: #ffcc00; /* Color al pasar el mouse */
+}
+
+.word-list {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
