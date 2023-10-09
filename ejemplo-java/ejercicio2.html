@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        var global=100;
+        function uno()
+        {
+            var local_uno=2;
+
+            alert("Global " + global + " local" + local_uno);
+            dos()
+        }
+
+        function dos()
+        {
+            var local_dos = 2;
+            
+            alert("Global " + global + " local" + local_dos);
+
+        }
+    </script>
+    <title>Ejercicio de javaScript Básico</title>
+</head>
+<body onload="uno();">
+    
+</body>
+</html>

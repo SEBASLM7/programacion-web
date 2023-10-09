@@ -125,7 +125,7 @@ footer {
     position: absolute; /* Establece posición absoluta para el contenedor */
     left: 0; /* Lo coloca en la parte izquierda */
     width: 100%; /* Ajusta el ancho del contenedor al 100% del footer */
-    height: calc(100% - 40px); /* Ajusta la altura del contenedor menos el espacio superior e inferior */
+    height: 100%; /* Ajusta la altura del contenedor menos el espacio superior e inferior */
   }
   
   .gif-container img {
@@ -180,3 +180,5 @@ footer {
   /* Aplica estilos específicos para pantallas grandes aquí */
   /* Puedes agregar estilos adicionales para dispositivos grandes si es necesario */
 }
+
+/* Media query para dispositivos pequeños, como smartphones */

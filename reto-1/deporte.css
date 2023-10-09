@@ -70,20 +70,21 @@ header {
 
 /* Estilo para la sección de reserva */
 .container {
-    width: 800px;
+    width: 90%; /* Cambia el ancho máximo para dispositivos más pequeños */
     background: #07182E;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centra verticalmente el contenido */
     overflow: hidden;
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 800px; /* Deja este valor como está para evitar que el contenedor se haga demasiado ancho en pantallas más grandes */
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
 }
+
 
 /* Estilo para el título y texto de reserva */
 .container h2,
