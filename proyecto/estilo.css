@@ -1,0 +1,583 @@
+
+.float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+}
+
+.fa-whatsapp{
+    font-size: 60px;
+}
+.float:hover{
+    background-color: #28ee71;
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.titulo{
+    color: orange;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+/*--------header -----------*/
+
+.par{
+    width: 100%;
+    height: 600px;
+
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, hsla(192, 17%, 94%, 0.336), hsla(207, 15%, 61%, 0.763)), url(imagenes/jardin-2.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.as{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.as > a{
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.as > a:hover{
+    text-decoration: underline;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*    titulo   */
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    text-align: centers;
+    justify-content: center;
+
+    font-size: 50px;
+    color: orange;
+}
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.imagen-nosotros{
+    width: 48%;
+}
+
+.contenido-textos{
+    width: 48%;
+    
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+/*    nuestros servicios     */
+
+.servicios {
+    background: #f2f2f2;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicio-ind {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Añadimos una transición para suavizar el efecto al pasar el mouse */
+}
+
+.servicio-ind:hover {
+    transform: scale(1.05); /* Hacemos que el cuadro se agrande ligeramente al pasar el mouse */
+}
+
+.servicio-ind > .servicio-imagen {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.servicio-ind > .servicio-imagen > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    flex-grow: 0;
+    display: none;
+    text-align: center;
+}
+
+.servicio-ind:hover .hover-galeria {
+    opacity: 1;
+    display: block;
+}
+
+
+
+
+/*  seccion de fotos  */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(255, 165, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.card_title {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.card_description {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: orange;
+    border-radius: 75px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos del slider */
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 45s linear infinite;
+    -webkit-animation: scroll 45s linear infinite;
+    width: calc(370px * 14);
+}
+
+.slider .slide {
+    width: 300px;
+}
+
+.slider .slide img {
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-300px * 7));
+        transform: translateX(calc(-300px * 7));
+    }
+}
+/*----------------------------------------------------*/
+.titulo2{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+
+/*    footer     */
+
+footer{
+background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding: 60px 0 30px 0;
+margin: auto;
+overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+
+}
+
+.boton-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-regresar:hover {
+    background-color: #0056b3;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+
+.content-foo h4{
+border-bottom: 3px solid #52c234;
+padding-bottom: 5px;
+margin-bottom:  10px; ;
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+
+}
+
+
+@media screen and (max-width:900px)
+{
+    header{
+        background-position:center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .contenedor-sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-nosotros{
+        width: 90%;
+    }
+
+
+    /*   galeria   */
+
+
+  
+}
+
+
+@media screen and (max-width:500px)
+{
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+
+    .textos-header{
+        font-size: 35px;
+
+
+    }
+
+
+    .imagen-nosotros{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .contenedor-sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    .servicio-ind{
+        width: 95%;
+    }
+
+
+    .contenedor-footer{
+        flex-direction: column;
+
+    }
+
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .titulo2{
+        padding: 5px;
+        margin-bottom: 60px;
+
+    }
+
+    .hover-galeria p{
+        font-size: 13px;
+    }
+
+    .slider .slide {
+        width: 100%; /* Ancho completo para que los slides ocupen toda la pantalla */
+    }
+
+    .textos-header{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+} 
+
+
+
+/*      foto de fondo main   */
+.foto-fondo{
+    background-color: black;
+    background-image: url(imagenes/jardin-8.jpg);
+    
+}
+
+
+
+
+
+
+/*-----TITULO PRICIPAL---*/
+
+
+
+.textos-header{
+    color: black;
+    font-size: 5rem;
+}
+
+
+button {
+    position: relative;
+    padding: 15px 45px;
+    background: #57E500;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  }
+  
+  .regreso:hover {
+    background: linear-gradient(85deg, #57E500, #3DA800); /* Mantiene el degradado verde en hover */
+    color: #fff;
+    border: 1px solid #3DA800; /* Cambia el color del borde en hover */
+}
+  @keyframes wind {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    0% {
+      background-position: 50% 100%;
+    }
+  
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+  }
+  
+  button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+  }
+  
+  @keyframes slay-1 {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .icon-2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  }
+  
+  button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .icon-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  }
+  
+  button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  /* Copyright - 2023 MuhammadHasann (Muhammad Hasan) 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
