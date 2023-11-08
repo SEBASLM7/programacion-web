@@ -49,6 +49,10 @@ body{
 }
 
 
+.prue{
+    flex-direction: column;
+    justify-content: center;
+}
 /*--------header -----------*/
 
 .par{
@@ -193,6 +197,8 @@ background: linear-gradient(to bottom, hsla(192, 17%, 94%, 0.336), hsla(207, 15%
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card {
